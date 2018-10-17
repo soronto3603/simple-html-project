@@ -1,0 +1,44 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+    .outter-red{
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+
+      display: inline-block;
+      padding: 10px;
+      background-color: #F5624D;
+      color: #ffffff;
+    }
+  </style>
+
+
+</head>
+<body>
+  <div id=a class="outter-red" onclick="ab('a')" >
+    <i class="fas fa-check"></i>
+  </div>
+  <div id=b class="outter-red" onclick="ab('b')" >
+    <i class="fas fa-check"></i>
+  </div>
+  <div id=c class="outter-red" onclick="ab('c')" >
+    <i class="fas fa-check"></i>
+  </div>
+  <div id=d class="outter-red" onclick="ab('d')" >
+    <i class="fas fa-check"></i>
+  </div>
+  <script>
+    function ab(id){
+      if(document.getElementById(id).style.backgroundColor=="rgb(231, 231, 231)"){
+        document.getElementById(id).style.backgroundColor="#F5624D";
+      }else{
+        document.getElementById(id).style.backgroundColor="#e7e7e7";
+      }
+    }
+  </script>
+</body>
+</html>
